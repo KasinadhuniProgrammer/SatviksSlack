@@ -1,0 +1,13 @@
+.sidebar {
+    color: white; 
+    background-color: #04335F;
+    border-top: 1px solid #07457F;
+    max-width: 260px;
+}
+
+.sidebar__firstsec {
+    display: flex; 
+    border-bottom: 1px solid #07457F;
+    padding-bottom: 10px;
+    padding: 13px;
+}
