@@ -8,22 +8,20 @@ import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 
 function Header() {
     return (
+
         <div className="header">
-            <div className="header__firstside">
-                <Avatar className="avatarheader"/>
-                <AccessTimeIcon className="accesstimeiconheader"/>
+            <div className="header__left">
+                <Avatar className="header__avatar"/>
+                <AccessTimeIcon />
 
             </div>
-            <div className="header__secondfirstside">
-                <SearchIcon className="searchiconheader"/>
-                <input placeholder="Search Satviks Slack" className="searchplaceholderheader"/>
-
+            <div className="header__search">
+                <SearchIcon />
+                <input placeholder="Search Satviks Slack"/>
             </div>
-            <div className="header__secondside">
-                <HelpOutlineIcon className="helpoutlineiconheader"/>
-
+            <div className="header__right">
+                <HelpOutlineIcon />
             </div>
-
         </div>
     ); 
 }
