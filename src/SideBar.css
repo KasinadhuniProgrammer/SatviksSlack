@@ -5,6 +5,12 @@
     max-width: 260px;
 }
 
+.sidebar > hr {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 1px solid #043D71; 
+}
+
 .sidebar__header {
     display: flex; 
     border-bottom: 1px solid #043D71;
@@ -42,5 +48,5 @@
     color: #043D71; 
     font-size: 18px;
     background-color: white;
-    border-radius: 999px;
+    border-radius: 999px; 
 }
