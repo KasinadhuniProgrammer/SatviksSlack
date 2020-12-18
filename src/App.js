@@ -3,22 +3,23 @@ import './App.css';
 
 import Header from './Header'; 
 import SideBar from './SideBar'; 
+import Chat from './Chat'; 
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom"; 
 
 function App() {
   return (
     <div className="app">
-      <Router>
+      <Router> 
         <Header />
         <div className="app__body">
           <SideBar />
           <Switch>
             <Route path="/room/:roomId">
-              <h1>CHAT SCREEN</h1>
+              <Chat />
 
             </Route>
             <Route path="/">
-              <h1>Welcome</h1>
+              <Chat />
 
             </Route>
           </Switch>
