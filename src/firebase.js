@@ -10,11 +10,12 @@ const firebaseConfig = {
     appId: "901090914363:web:42873a460f4b78e5ceec1e",
     measurementId: "G-15KHVP7LVL" 
   };
+//firebaseConfig is connecting our keys 
 
-  const firebaseApp = firebase.initializeApp(firebaseConfig);
-  const db = firebaseApp.firestore(); 
-  const auth = firebase.auth(); 
-  const provider = new firebase.auth.GoogleAuthProvider(); 
+  const firebaseApp = firebase.initializeApp(firebaseConfig); //connects our app to the API keys
+  const db = firebaseApp.firestore(); //getting access to firestore database 
+  const auth = firebase.auth(); //preparing authentication module
+  const provider = new firebase.auth.GoogleAuthProvider(); //preparing provider - in order to get Google services
 
   export { auth, provider };
   export default db;  
